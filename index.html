@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<!--
+By JayCode
+-->
+
+
+
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Young Talent Charity Agency</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+
+		<link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/jpeg" href="img/logo.png"/>
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	</head>
+	<body>
+	<div class="svg-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
+      </svg>
+
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
+      </svg>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+<style>
+  #logo {
+    display: inline-block;
+    margin: 15px; 
+    float: left;
+    height: 60px;
+    width: auto; 
+    border-radius: 10%; 
+  }
+</style>
+            <a href="#"><img id="logo" src="logo.jpg"></a>
+              <nav>
+            <a href="#" id="menu-icon"></a>
+            <a class="navbar-brand" href="#header">Young Talent Charity Agency.</a>
+            
+          </div><!-- /.navbar-header -->
+          
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>              
+              <li><a href="#portfolio">Service</a></li>
+			  <li><a href="#team">Donate</a></li>
+			  <li><a href="#info"></a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="marquee.html" target="_blank">Our Volunters</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+          
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <p>Honesty, Respect, Truthfulness, Love, Service.....</p>
+                    </div>
+
+                  </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+            </div> <!-- /.overlay -->
+          </div> <!-- /.image-slide -->
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span>Prosper Bangura</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Prosper Bangura</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"img/web1.png",
+                              title : "Young Talent Charity Agency",
+							  author : "Prosper Bangura"
+                            },
+                            {
+                              bigImage :"img/web.png",
+                              title : "Young Talent Charity Agency",
+                              author : "Prosper Bangura"
+                            },
+                            {
+                              bigImage :"img/logo.png",
+                              title : "Young Talent Charity Agency",
+                              author : "Prosper  Bangura"
+                            }
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 600, speedOut : 600, easingIn : mina.easeinout});
+            loaderSVG.show()
+        </script>
+
+      </div><!-- /.header-slide -->
+    </section>
+
+    <!-- HEADER END -->
+    <!-- ABOUT -->
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2> WHO WE ARE, <span>WHAT WE DO</span></h2>
+        <p> Young Talent Charity Agency Sierra Leone is a voluntary and non profit organization, we have two sectors in our agency, first is to advocate for the needy ones and the other sector is to make people to show Case their talents. </strong> </p>
+      </header>
+
+      <div class="container">
+        <div class="row table-row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="section-content">
+              <div class="big-image" style="background-image:url(images/1c.png)"></div>
+            </div>
+            
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-code"></i></div>
+                <div class="about-detail">
+                  <h2>MISSION <span>STATEMENT</span></h2>
+                  <p>wish to work with global partnership organization and individual that has similar vision for the welfare and promotion of youth, children, women, girls and demote communities in needs to promote talent.
+                   </p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h2>VISION <span>STATEMENT</h2>
+                  <p>To see a smile on the less privilege faces to be love equally without no  boundaries, race, age, status etc..
+
+
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-cube"></i></div>
+                <div class="about-detail">
+                  <h2> SPECIFIC <span>OBJECTIVES</span></h2
+                  <ul>
+                    <li>
+                      child protection: feeding,education, psychosocial camp, water and sanitation, promotion of talents.
+
+              
+                    </li>
+                    <br>
+                    <li>  ADVOCACY: media engagement, seminars or workshops, gender Base violence</li>
+                  <br>
+                  <li>
+                     GENDER EQUALITY: Agriculture or backyard gardening.
+                  <br>
+                </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+      </div> <!-- /.container -->
+    </section>
+	
+	
+	    <!-- PORTFOLIO -->
+
+    <section id="portfolio" class="light"> 
+      <header class="title">
+        <h2>SERVICE <span>DELIVERY PROGRAMS</span></h2>
+      
+        <li>
+          Feeding 
+        </li><br>
+        <li>
+          Education
+        </li><br>
+        <li>
+          Psychosocial camp
+        </li><br>
+        <li>
+         Water and sanitation
+        </li><br>
+        <li>
+          Promotion of Talentst
+        </li><br>
+       
+        <br><br><br>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <ul id="filters" class="list-inline">
+            <li data-filter="all" class="filter">All</li>
+            <li data-filter=".branding" class="filter">CHILD PROTECTION</li> 
+            <li data-filter=".graphic" class="filter">ADVOCACY:</li> 
+            <li data-filter=".printing" class="filter"> GENDER EQUALITY</li> 
+            <li data-filter=".video" class="filter">Video</li> 
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="container-portfolio">
+            <!-- PORTFOLIO OBJECT -->
+            <script type="text/javascript">
+            var portfolio = [
+                    {
+                      category : "branding",
+                      image : "img/web.png",
+                      title : "<span>Feeding</span>",
+                      link : "#none",
+                      text : "Young Talent Charity Agency"
+                    },
+                    {
+                      category : "branding",
+                      image : "img/web1.png",
+                      title : "Education<span> empowerment</span>",
+                      link : "#none",
+                      text : "Young Talent Charity Agency"
+                    },
+                    {
+                      category : "graphic",
+                      image : "img/web2.png",
+                      title : "psychosocial<span> Camp</span>",
+                      link : "#none",
+                      text : "Young Talent Charity Agency"
+                    },
+                    {
+                      category : "graphic",
+                      image : "img/web3.png",
+                      title : "Community<span>Service project</span>",
+                      link : "#none",
+                      text : "Young Talent Charity Agency"
+                    },
+                    {
+                      category : "video",
+                      image : "img/web4.png",
+                      title : "seminars or <span> workshops</span>",
+                      link : "none",
+                      text : "Young Talent Charity Agency"
+                    },
+                    {
+                      category : "branding",
+                      image : "img/web3.png",
+                      title : "sychosocial <span>Camp</span>",
+                      link : "#none",
+                      text : "Young Talent Charity Agency"
+      
+                    },
+                    {
+                      category : "printing",
+                      image : "img/web3.png",
+                      title : "Gender  <span> Base violence.</span>",
+                      link : "#none",
+                      text : "Young Talent Charity Agency"
+                    },
+                    {
+                      category : "printing",
+                      image : "img/web2.png",
+                      title : "Media  <span> Engagement,</span>",
+                      link : "", 
+                      text : "Young Talent Charity Agency" 
+                  
+                    },
+                ];
+            </script>
+          </div>
+        </div>
+      </div>
+    </section><br><br>
+
+
+
+    <!-- TEAM -->
+
+    <section id="team" class="light">
+      <header class="title">
+        <h2> <span>Donate </span></h2>
+        <form action="index11.html" method="post" target="_top"> <!-- Identify your business so that you can collect the payments. --> <input type="hidden" name="business" value="donations@kcparkfriends.org"> <!-- Specify details about the contribution --> <input type="hidden" name="no_recurring" value="0"> <input type="hidden" name="item_name" value="Friends of the Park"> <input type="hidden" name="item_number" value="Fall Cleanup Campaign"> <input type="hidden" name="currency_code" value="USD"> <!-- Display the payment button. --> <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate"> <img alt="" width="1" height="1" src="" ></form>
+        <br><br>
+        <h2>Creative <span>Team</span></h2>
+        <p>Around 795 million people in the world do not have enough food, in order to live a healthy and active life. However, you can help solving this problem by donating to save lives and help to change a part of this world! </b></p>
+      </header>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="img/b.png" alt="" class="img-circle">
+              </div>
+              <div class="btn btn-sm btn-success mycustom_btn" 
+              target="_blank" onclick="document.location='index.html'"  data-target="_blank">Read More</button>
+               </div>
+              
+              <h3>Ibrahim Prosper Bangura</h3>
+            <br>
+              <h5>Am the founder of Young Talent Charity Agency Sierra Leone.</h5><h5>CEO</h5>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="" class="fa fa-facebook"></a></li>
+                  <li><a href="" class="fa fa-google-plus"></a></li>
+                </ul> 
+              </div>                
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="img\ss.png" alt="" class="img-circle">
+              </div>
+
+              <div class="btn btn-sm btn-success mycustom_btn" 
+              target="_blank" onclick="document.location='index.html'"  data-target="_blank">Read More</button>
+               </div>
+              
+              <h3>MISSION</h3>
+              <h5>Our Mission</h5>
+
+              <p>Is to work with global partnership organization and individual that has similar vision for the welfare and promotion of youth, children, women, girls and demote communities in needs to promote talent...</p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="https://www.facebook.com/kabia.adikalie" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul> 
+              </div>                
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="img\a.jpeg" alt="" class="img-circle">
+              </div>
+
+             <div class="btn btn-sm btn-success mycustom_btn" 
+              target="_blank" onclick="document.location='index.html'"  data-target="_blank">Read More</button>
+               </div>
+              
+              <h3>VISION</h3>
+              <h5>Our Vision</h5>
+
+              <p>
+                To see a smile on the less privilege faces to be love equally without no boundaries, race, age, status etc.....</p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul> 
+              </div>                
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="img\c.png" alt="" class="img-circle">
+              </div>
+
+              <div class="btn btn-sm btn-success mycustom_btn" 
+              target="_blank" onclick="document.location='index.html'"  data-target="_blank">International -Read More</button>
+               </div>
+              
+              <h3>HAWANATU KOROMA</h3>
+              <h5>Second C.E.O of Young Talent Charity Agency Sierra Leone </h5>
+ 
+          
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul> 
+              </div>                
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+	    <!-- INFO -->
+
+      <section id="team" class="dark">
+        <header class="title">
+          <h2> <span>Donate </span></h2>
+          <form action="index11.html" method="post" target="_top"> <!-- Identify your business so that you can collect the payments. --> <input type="hidden" name="business" value="donations@kcparkfriends.org"> <!-- Specify details about the contribution --> <input type="hidden" name="no_recurring" value="0"> <input type="hidden" name="item_name" value="Friends of the Park"> <input type="hidden" name="item_number" value="Fall Cleanup Campaign"> <input type="hidden" name="currency_code" value="USD"> <!-- Display the payment button. --> <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate"> <img alt="" width="1" height="1" src="" ></form>
+          <br><br>
+        <h2>To Save<span> Others</span></h2>
+        <p>“ The GDP per capital and GDP growth play huge roles in a country's economic status, as they show measurements of a country's standard of living, how prosperous the citizens of a country feel, and how fast a country's economy is growing. These are very low in many countries as there are multiple problems, such as the status of their labour, lands, capital and enterprises. .</p>
+      </header>
+
+      <div class="container experties">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="80%"></span><em>ADVOCACY</em></li>
+                <li><span class="percentage" data-value="72%"></span><em>CHILD PROTECTION </em></li>
+                <li><span class="percentage" data-value="85%"></span><em>GENDER QUALITY</em></li>
+                <li><span class="percentage" data-value="45%"></span><em>CHILD EMPOWERMENT</em></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="95%"></span><em>EDUCATION</em></li>
+                <li><span class="percentage" data-value="520%"></span><em>FEEDING</em></li>
+                <li><span class="percentage" data-value="49%"></span><em>HEALTH & SANITATION</em></li>
+                <li><span class="percentage" data-value="98%"></span><em>WORKSHOPS</em></li>
+              </ul>
+              <form action="index11.html" method="post" target="_top"> <!-- Identify your business so that you can collect the payments. --> <input type="hidden" name="business" value="donations@kcparkfriends.org"> <!-- Specify details about the contribution --> <input type="hidden" name="no_recurring" value="0"> <input type="hidden" name="item_name" value="Friends of the Park"> <input type="hidden" name="item_number" value="Fall Cleanup Campaign"> <input type="hidden" name="currency_code" value="USD"> <!-- Display the payment button. --> <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate"> <img alt="" width="1" height="1" src="" ></form>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>	
+	
+
+    <section class="separator blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="0">
+              <div class="counter-icon">
+                <i class="fa fa-group"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="15"></span>
+                <small>Clients</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="500">
+              <div class="counter-icon">
+                <i class="fa fa-leaf"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="5"></span>
+                <small>Awards</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1000">
+              <div class="counter-icon">
+                <i class="fa fa-gears"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="1"></span>
+                <small>Projects</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+              <div class="counter-icon">
+                <i class="fa fa-inbox"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="25"></span>
+                <small>Mail</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER CONTACT -->
+
+     <section id="contact" class="dark">
+      <header class="title">
+        <h2>Contact <span>Us</span></h2>
+        <p>Young Talent Charity Agency
+          SUPPORT OUR WORK BY : Making cheques or money order payable to campaign for women’s vote in democracy account at vista bank
+          
+          ACCOUNT NO: 1810118416201
+          
+          IN KIND DONOTIONS ARE ALSO WELCOME
+
+          .</p>
+          <form action="index11.html" method="post" target="_top"> <!-- Identify your business so that you can collect the payments. --> <input type="hidden" name="business" value="donations@kcparkfriends.org"> <!-- Specify details about the contribution --> <input type="hidden" name="no_recurring" value="0"> <input type="hidden" name="item_name" value="Friends of the Park"> <input type="hidden" name="item_number" value="Fall Cleanup Campaign"> <input type="hidden" name="currency_code" value="USD"> <!-- Display the payment button. --> <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate"> <img alt="" width="1" height="1" src="" ></form>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 animated" data-animate="fadeInLeft">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" rows="3" placeholder="Tell Us Everything"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button class="btn btn-default submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 animated" data-animate="fadeInRight">
+            <address>
+                <span><i class="fa fa-map-marker fa-lg"></i><a href="https://www.google.com/maps/place/Wellington,+Freetown/@8.4417428,-13.1801998,15z/data=!4m15!1m8!3m7!1s0xf04e803cb983c27:0x23573a5c3c13b9!2sWellington,+Freetown!3b1!8m2!3d8.442019!4d-13.17093!16s%2Fm%2F0g56j50!3m5!1s0xf04e803cb983c27:0x23573a5c3c13b9!8m2!3d8.442019!4d-13.17093!16s%2Fm%2F0g56j50"> Wellington, Freetown, Sierra Leone</a></span>
+                <span><i class="fa fa-phone fa-lg"></i> <a href="tel:23276619063">Click to call a customer support </a></span>
+                <span><i class="fa fa-envelope-o fa-lg"></i> <a href="mailto:youngtalentcharityagency@gmail.com">youngtalentcharityagency&#64;gmail.com</a></span>
+                <span><i class="fa fa-globe fa-lg"></i> <a href="https://www.facebook.com/youngtalentcharityagency?mibextid=LQQJ4d">facebook.com</a></span>
+            </address>
+          </div>
+		  
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>FOUNDED SINCE <i class="fa fa-what"></i> <a href="">23RD AUGUST 2020</a></p>
+            <p><small>copy@right-youngtalentcharityagency </small>2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </div><!-- /.container-fluid -->
+
+   <div id="whatswidget-pre-wrapper" class="">
+    <div id="whatswidget-widget-wrapper" class="whatswidget-widget-wrapper" style="all:revert;">
+    <div id="whatswidget-conversation" class="whatswidget-conversation" style="color: revert; font: revert; font-feature-settings: revert; font-kerning: revert; font-optical-sizing: revert; font-variation-settings: revert; text-orientation: revert; text-rendering: revert; -webkit-font-smoothing: revert; -webkit-locale: revert; -webkit-text-orientation: revert; -webkit-writing-mode: revert; writing-mode: revert; zoom: revert; place-content: revert; place-items: revert; place-self: revert; alignment-baseline: revert; animation: revert; appearance: revert; backdrop-filter: revert; backface-visibility: revert; background: revert; background-blend-mode: revert; baseline-shift: revert; block-size: revert; border-block: revert; border: revert; border-radius: revert; border-collapse: revert; border-inline: revert; inset: revert; box-shadow: revert; box-sizing: revert; break-after: revert; break-before: revert; break-inside: revert; buffered-rendering: revert; caption-side: revert; caret-color: revert; clear: revert; clip: revert; clip-path: revert; clip-rule: revert; color-interpolation: revert; color-interpolation-filters: revert; color-rendering: revert; color-scheme: revert; columns: revert; column-fill: revert; gap: revert; column-rule: revert; column-span: revert; contain: revert; contain-intrinsic-size: revert; content: revert; content-visibility: revert; counter-increment: revert; counter-reset: revert; counter-set: revert; cursor: revert; cx: revert; cy: revert; d: revert; display: none; dominant-baseline: revert; empty-cells: revert; fill: revert; fill-opacity: revert; fill-rule: revert; filter: revert; flex: revert; flex-flow: revert; float: revert; flood-color: revert; flood-opacity: revert; grid: revert; grid-area: revert; height: revert; hyphens: revert; image-orientation: revert; image-rendering: revert; inline-size: revert; inset-block: revert; inset-inline: revert; isolation: revert; letter-spacing: revert; lighting-color: revert; line-break: revert; list-style: revert; margin-block: revert; margin: revert; margin-inline: revert; marker: revert; mask: revert; mask-type: revert; max-block-size: revert; max-height: revert; max-inline-size: revert; max-width: revert; min-block-size: revert; min-height: revert; min-inline-size: revert; min-width: revert; mix-blend-mode: revert; object-fit: revert; object-position: revert; offset: revert; opacity: 0; order: revert; origin-trial-test-property: revert; orphans: revert; outline: revert; outline-offset: revert; overflow-anchor: revert; overflow-wrap: revert; overflow: revert; overscroll-behavior-block: revert; overscroll-behavior-inline: revert; overscroll-behavior: revert; padding-block: revert; padding: revert; padding-inline: revert; page: revert; page-orientation: revert; paint-order: revert; perspective: revert; perspective-origin: revert; pointer-events: revert; position: revert; quotes: revert; r: revert; resize: revert; ruby-position: revert; rx: revert; ry: revert; scroll-behavior: revert; scroll-margin-block: revert; scroll-margin: revert; scroll-margin-inline: revert; scroll-padding-block: revert; scroll-padding: revert; scroll-padding-inline: revert; scroll-snap-align: revert; scroll-snap-stop: revert; scroll-snap-type: revert; shape-image-threshold: revert; shape-margin: revert; shape-outside: revert; shape-rendering: revert; size: revert; speak: revert; stop-color: revert; stop-opacity: revert; stroke: revert; stroke-dasharray: revert; stroke-dashoffset: revert; stroke-linecap: revert; stroke-linejoin: revert; stroke-miterlimit: revert; stroke-opacity: revert; stroke-width: revert; tab-size: revert; table-layout: revert; text-align: revert; text-align-last: revert; text-anchor: revert; text-combine-upright: revert; text-decoration: revert; text-decoration-skip-ink: revert; text-indent: revert; text-overflow: revert; text-shadow: revert; text-size-adjust: revert; text-transform: revert; text-underline-offset: revert; text-underline-position: revert; touch-action: revert; transform: revert; transform-box: revert; transform-origin: revert; transform-style: revert; transition: revert; user-select: revert; vector-effect: revert; vertical-align: revert; visibility: revert; -webkit-app-region: revert; border-spacing: revert; -webkit-border-image: revert; -webkit-box-align: revert; -webkit-box-decoration-break: revert; -webkit-box-direction: revert; -webkit-box-flex: revert; -webkit-box-ordinal-group: revert; -webkit-box-orient: revert; -webkit-box-pack: revert; -webkit-box-reflect: revert; -webkit-highlight: revert; -webkit-hyphenate-character: revert; -webkit-line-break: revert; -webkit-line-clamp: revert; -webkit-mask-box-image: revert; -webkit-mask: revert; -webkit-mask-composite: revert; -webkit-perspective-origin-x: revert; -webkit-perspective-origin-y: revert; -webkit-print-color-adjust: revert; -webkit-rtl-ordering: revert; -webkit-ruby-position: revert; -webkit-tap-highlight-color: revert; -webkit-text-combine: revert; -webkit-text-decorations-in-effect: revert; -webkit-text-emphasis: revert; -webkit-text-emphasis-position: revert; -webkit-text-fill-color: revert; -webkit-text-security: revert; -webkit-text-stroke: revert; -webkit-transform-origin-x: revert; -webkit-transform-origin-y: revert; -webkit-transform-origin-z: revert; -webkit-user-drag: revert; -webkit-user-modify: revert; white-space: revert; widows: revert; width: revert; will-change: revert; word-break: revert; word-spacing: revert; x: revert; y: revert; z-index: revert;"><div class="whatswidget-conversation-header" style="all:revert;">
+    <div id="whatswidget-conversation-title" class="whatswidget-conversation-title" style="all:revert;">Young Talent Charity Agency</div></div><div id="whatswidget-conversation-message" class="whatswidget-conversation-message " style="all:revert;">You are Welcome to get in touch with us</div><div class="whatswidget-conversation-cta" style="all:revert;"> <a style="all:revert;" id="whatswidget-phone-desktop" target="_blank" href="https://wa.me/23276619063?text=Hello%20Young%20Talent%20Chirity%20Agency%20I%20Came%20from%20your%20site" class="whatswidget-cta whatswidget-cta-desktop">Send message</a> <a id="whatswidget-phone-mobile" target="_blank" href="https://wa.me/+23276619063" class="whatswidget-cta whatswidget-cta-mobile" style="all:revert;">Send message</a>
+    </div><a target="_blank" class="whatswidget-link" href="https://www.oflox.com" title="Feito no WhatsWidget" style="all:revert;"><img src="" width="16px" style="all:revert;"></a></div>
+    <div id="whatswidget-conversation-message-outer" class="whatswidget-conversation-message-outer" style="all:revert;"> <span id="whatswidget-text-header-outer" class="whatswidget-text-header-outer" style="all:revert;">Young Talent Charity Agency</span><br> <div id="whatswidget-text-message-outer" class="whatswidget-text-message-outer" style="all:revert;">Hello customer, let chat live</div></div><div class="whatswidget-button-wrapper" style="all:revert;"><div class="whatswidget-button" id="whatswidget-button" style="all:revert;"><div style="margin:0 auto;width:38.5px;all:revert;"> <img class="whatswidget-icon" style="all:revert;" src=" https://www.oflox.com/blog/wp-content/uploads/2021/01/wpwhite.png"></div></div></div>
+    <script id="whatswidget-script" type="text/javascript">document.getElementById("whatswidget-conversation").style.display="none";document.getElementById("whatswidget-conversation").style.opacity="0"; var button=document.getElementById("whatswidget-button");button.addEventListener("click",openChat);var conversationMessageOuter=document.getElementById("whatswidget-conversation-message-outer");conversationMessageOuter.addEventListener("click",openChat);var chatOpen=!1;function openChat(){0==chatOpen?(document.getElementById("whatswidget-conversation").style.display="block",document.getElementById("whatswidget-conversation").style.opacity=100,chatOpen=!0,document.getElementById("whatswidget-conversation-message-outer").style.display="none"):(document.getElementById("whatswidget-conversation").style.opacity=0,document.getElementById("whatswidget-conversation").style.display="none",chatOpen=!1)}</script></div>
+    <style id="whatswidget-style">.whatswidget-widget-wrapper{font-family:"Helvetica Neue","Apple Color Emoji",Helvetica,Arial,sans-serif !important;font-size:16px !important;position:fixed !important;bottom:20px !important;right:30px !important;z-index:1001 !important}.whatswidget-conversation{background-color:#e4dcd4 !important;background-image:url('https://www.oflox.com/blog/wp-content/uploads/2021/01/wpbg.png') !important;background-repeat:repeat !important;box-shadow:rgba(0, 0, 0, 0.16) 0px 5px 40px !important;width:250px !important;height:300px !important;border-radius:10px !important;transition-duration:0.5s !important;margin-bottom:80px !important}.whatswidget-conversation-header{background-color:white !important;padding:10px !important;padding-left:25px !important;box-shadow:0px 1px #00000029 !important;font-weight:600 !important;border-top-left-radius:10px !important;border-top-right-radius:10px !important}.whatswidget-conversation-message{line-height: 1.2em !important;background-color:white !important;padding:10px !important;margin:10px !important;margin-left:15px !important;border-radius:5px !important}.whatswidget-conversation-message-outer{background-color:#FFF !important;padding:10px !important;margin:10px !important;margin-left:0px !important;border-radius:5px !important;box-shadow:rgba(0, 0, 0, 0.342) 0px 2.5px 10px !important;cursor:pointer !important;animation:nudge 2s linear infinite !important;margin-bottom:70px !important}.whatswidget-text-header-outer{font-weight:bold !important;font-size:90% !important}.whatswidget-text-message-outer{font-size:90% !important}.whatswidget-conversation-cta{border-radius:25px !important;width:175px !important;font-size:110% !important;padding:10px !important;margin:0 auto !important;text-align:center !important;background-color:#23b123 !important;color:white !important;font-weight:bold !important;box-shadow:rgba(0, 0, 0, 0.16) 0px 2.5px 10px !important;transition:1s !important;position:absolute !important;top:62% !important;left:10% !important}.whatswidget-conversation-cta:hover{transform:scale(1.1) !important;filter:brightness(1.3) !important}.whatswidget-cta{text-decoration:none !important;color:white !important}.whatswidget-cta-desktop{display:none !important}.whatswidget-cta-mobile{display:inherit !important}@media (min-width: 48em){.whatswidget-cta-desktop{display:inherit !important}
+    .whatswidget-cta-mobile{display:none !important}}.whatswidget-button-wrapper{position:fixed !important;bottom:15px !important;right:15px !important}.whatswidget-button{position:relative !important;right:0px !important;background-color:#31d831 !important;border-radius:100% !important;width:60px !important;height:60px !important;box-shadow:2px 1px #0d630d63 !important;transition:1s !important}.whatswidget-icon{width:42px !important;height:42px !important;position:absolute !important; bottom:10px !important; left:10px !important;}.whatswidget-button:hover{filter:brightness(115%) !important;transform:rotate(15deg) scale(1.15) !important;cursor:pointer !important}@keyframes nudge{20%,100%{transform:translate(0,0)}0%{transform:translate(0,5px);transform:rotate(2deg)}10%{transform:translate(0,-5px);transform:rotate(-2deg)}}.whatswidget-link{position:absolute !important;bottom:90px !important;right:5px !important;opacity:0.5 !important}</style>
+    </div>
+    
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+    
+
+    
+	</body>
+
+
+</html>
+
